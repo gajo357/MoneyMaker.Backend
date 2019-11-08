@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MoneyMaker.Common", "MoneyMaker.Common\MoneyMaker.Common.fsproj", "{B68820D8-90CE-4D9D-B495-71D17DD61E54}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MoneyMaker.WidgetScraper", "MoneyMaker.WidgetScraper\MoneyMaker.WidgetScraper.fsproj", "{6787A025-17D8-4D9B-A30A-4AB6B58AFF61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B68820D8-90CE-4D9D-B495-71D17DD61E54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68820D8-90CE-4D9D-B495-71D17DD61E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68820D8-90CE-4D9D-B495-71D17DD61E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68820D8-90CE-4D9D-B495-71D17DD61E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6787A025-17D8-4D9B-A30A-4AB6B58AFF61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6787A025-17D8-4D9B-A30A-4AB6B58AFF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6787A025-17D8-4D9B-A30A-4AB6B58AFF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6787A025-17D8-4D9B-A30A-4AB6B58AFF61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC4BDA0F-E1B0-42DC-91AE-947ACD0D323D}
+	EndGlobalSection
+EndGlobal

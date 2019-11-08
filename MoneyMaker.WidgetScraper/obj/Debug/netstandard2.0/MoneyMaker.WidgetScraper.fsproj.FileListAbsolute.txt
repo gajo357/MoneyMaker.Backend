@@ -1,0 +1,11 @@
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\bin\Debug\netstandard2.0\MoneyMaker.Common.dll
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\obj\Debug\netstandard2.0\MoneyMaker.WidgetScraper.fsprojAssemblyReference.cache
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\obj\Debug\netstandard2.0\MoneyMaker.WidgetScraper.AssemblyInfoInputs.cache
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\obj\Debug\netstandard2.0\MoneyMaker.WidgetScraper.AssemblyInfo.fs
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\bin\Debug\netstandard2.0\MoneyMaker.WidgetScraper.deps.json
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\bin\Debug\netstandard2.0\MoneyMaker.WidgetScraper.dll
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\bin\Debug\netstandard2.0\MoneyMaker.WidgetScraper.pdb
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\bin\Debug\netstandard2.0\MoneyMaker.Common.pdb
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\obj\Debug\netstandard2.0\MoneyMaker.WidgetScraper.fsproj.CopyComplete
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\obj\Debug\netstandard2.0\MoneyMaker.WidgetScraper.dll
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\obj\Debug\netstandard2.0\MoneyMaker.WidgetScraper.pdb
