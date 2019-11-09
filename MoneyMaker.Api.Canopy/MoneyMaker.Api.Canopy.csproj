@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
-    <UserSecretsId>cf60678e-b7f7-40d1-b3eb-ac04f83c60b4</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
@@ -10,12 +9,13 @@
     <PackageReference Include="Extensions.Hosting.AsyncInitialization" Version="1.0.0-beta.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="78.0.3904.7000" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MoneyMaker.CanopyScraper\MoneyMaker.CanopyScraper.fsproj" />
     <ProjectReference Include="..\MoneyMaker.DataProvider\MoneyMaker.DataProvider.csproj" />
     <ProjectReference Include="..\MoneyMaker.Dto\MoneyMaker.Dto.fsproj" />
-    <ProjectReference Include="..\MoneyMaker.WidgetScraper\MoneyMaker.WidgetScraper.fsproj" />
   </ItemGroup>
 
 </Project>

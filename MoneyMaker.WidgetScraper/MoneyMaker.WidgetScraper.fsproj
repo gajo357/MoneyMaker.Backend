@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="NodeOperations.fs" />
-    <Compile Include="TableOperations.fs" />
     <Compile Include="WidgetScraper.fs" />
   </ItemGroup>
 

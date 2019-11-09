@@ -1,0 +1,55 @@
+[
+  {
+    "Sport": "soccer",
+    "Leagues": [
+      {
+        "Country": "azerbaijan",
+        "League": "premier-league"
+      },
+      {
+        "Country": "china",
+        "League": "super-league"
+      },
+      {
+        "Country": "czech-republic",
+        "League": "1-liga"
+      },
+      {
+        "Country": "england",
+        "League": "premier-league"
+      },
+      {
+        "Country": "england",
+        "League": "championship"
+      },
+      {
+        "Country": "europe",
+        "League": "champions-league"
+      },
+      {
+        "Country": "europe",
+        "League": "europa-league"
+      },
+      {
+        "Country": "germany",
+        "League": "bundesliga"
+      },
+      {
+        "Country": "israel",
+        "League": "ligat-ha-al"
+      },
+      {
+        "Country": "kazakhstan",
+        "League": "premier-league"
+      },
+      {
+        "Country": "poland",
+        "League": "ekstraklasa"
+      },
+      {
+        "Country": "spain",
+        "League": "laliga"
+      }
+    ]
+  }
+]

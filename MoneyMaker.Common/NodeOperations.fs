@@ -1,7 +1,10 @@
-﻿module MoneyMaker.WidgetScraper.NodeOperations
+﻿module MoneyMaker.Common.NodeOperations
 
 open FSharp.Data
+open Common
 
+let getElementById (name: string) (node:HtmlDocument) =
+    node.CssSelect(name).Head
 
 let getText (node:HtmlNode) =
     node.InnerText().Trim()
@@ -22,3 +25,8 @@ let getTdsFromRow = getElements "td"
 
 let getHref = getAttribute "href"
 let getAllHrefElements = getElements "a"
+
+let getClassAttribute node = getAttribute "class" node
+
+let classAttributeContains text node =
+    node|> getClassAttribute |> contains text

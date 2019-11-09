@@ -8,9 +8,11 @@
     <Compile Include="Common.fs" />
     <Compile Include="OptionBuilder.fs" />
     <Compile Include="BettingCalculations.fs" />
+    <Compile Include="NodeOperations.fs" />
     <Compile Include="Models.fs" />
     <Compile Include="ScrapingParts.fs" />
     <Compile Include="OddsManipulation.fs" />
+    <Compile Include="TableOperations.fs" />
     <Compile Include="Mapping.fs" />
   </ItemGroup>
 

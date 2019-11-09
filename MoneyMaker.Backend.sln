@@ -15,6 +15,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneyMaker.DataProvider", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{00629D35-3178-4FEA-82E1-0E4D522BDF44}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MoneyMaker.CanopyScraper", "MoneyMaker.CanopyScraper\MoneyMaker.CanopyScraper.fsproj", "{45351CF6-5773-44A5-81A4-2AAA85DCB3EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyMaker.Api.Canopy", "MoneyMaker.Api.Canopy\MoneyMaker.Api.Canopy.csproj", "{227EB9E0-7ECB-4E6F-B01F-74F0886C3717}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,12 +45,21 @@ Global
 		{993B7F46-4386-4E89-A3ED-4A0B1E73E0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{993B7F46-4386-4E89-A3ED-4A0B1E73E0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{993B7F46-4386-4E89-A3ED-4A0B1E73E0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45351CF6-5773-44A5-81A4-2AAA85DCB3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45351CF6-5773-44A5-81A4-2AAA85DCB3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45351CF6-5773-44A5-81A4-2AAA85DCB3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45351CF6-5773-44A5-81A4-2AAA85DCB3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{227EB9E0-7ECB-4E6F-B01F-74F0886C3717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{227EB9E0-7ECB-4E6F-B01F-74F0886C3717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{227EB9E0-7ECB-4E6F-B01F-74F0886C3717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{227EB9E0-7ECB-4E6F-B01F-74F0886C3717}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{52DE3ABB-47F8-4D93-B043-17CDAB8156FB} = {00629D35-3178-4FEA-82E1-0E4D522BDF44}
+		{227EB9E0-7ECB-4E6F-B01F-74F0886C3717} = {00629D35-3178-4FEA-82E1-0E4D522BDF44}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DC4BDA0F-E1B0-42DC-91AE-947ACD0D323D}

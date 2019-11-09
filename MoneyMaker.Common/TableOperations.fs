@@ -1,7 +1,6 @@
-﻿module MoneyMaker.WidgetScraper.TableOperations
+﻿module MoneyMaker.Common.TableOperations
 
 open NodeOperations 
-open MoneyMaker.Common
 open OptionBuilder
 open Common
 open ScrapingParts
