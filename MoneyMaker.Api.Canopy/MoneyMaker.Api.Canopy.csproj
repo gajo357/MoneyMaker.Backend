@@ -6,9 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="canopy" Version="2.1.1" />
     <PackageReference Include="Extensions.Hosting.AsyncInitialization" Version="1.0.0-beta.1" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="78.0.3904.7000" />
   </ItemGroup>
 
@@ -16,6 +18,12 @@
     <ProjectReference Include="..\MoneyMaker.CanopyScraper\MoneyMaker.CanopyScraper.fsproj" />
     <ProjectReference Include="..\MoneyMaker.DataProvider\MoneyMaker.DataProvider.csproj" />
     <ProjectReference Include="..\MoneyMaker.Dto\MoneyMaker.Dto.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="chromedriver">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
