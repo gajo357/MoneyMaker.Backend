@@ -87,6 +87,19 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "MoneyMaker.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/MoneyMaker.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoneyMaker.Dto.dll": {}
+        }
       }
     }
   },
@@ -307,12 +320,18 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "MoneyMaker.Dto/1.0.0": {
+      "type": "project",
+      "path": "../MoneyMaker.Dto/MoneyMaker.Dto.fsproj",
+      "msbuildProject": "../MoneyMaker.Dto/MoneyMaker.Dto.fsproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "FSharp.Core >= 4.7.0",
       "FSharp.Data >= 3.3.2",
+      "MoneyMaker.Dto >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -345,7 +364,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\gajo3\\source\\repos\\MoneyMaker.Backend\\MoneyMaker.Dto\\MoneyMaker.Dto.fsproj": {
+              "projectPath": "C:\\Users\\gajo3\\source\\repos\\MoneyMaker.Backend\\MoneyMaker.Dto\\MoneyMaker.Dto.fsproj"
+            }
+          }
         }
       }
     },

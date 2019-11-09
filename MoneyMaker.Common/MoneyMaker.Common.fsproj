@@ -11,10 +11,15 @@
     <Compile Include="Models.fs" />
     <Compile Include="ScrapingParts.fs" />
     <Compile Include="OddsManipulation.fs" />
+    <Compile Include="Mapping.fs" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="FSharp.Data" Version="3.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MoneyMaker.Dto\MoneyMaker.Dto.fsproj" />
   </ItemGroup>
 
 </Project>

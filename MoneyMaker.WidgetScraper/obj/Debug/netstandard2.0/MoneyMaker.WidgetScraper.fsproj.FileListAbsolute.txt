@@ -9,3 +9,5 @@ C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\bin\Debu
 C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\obj\Debug\netstandard2.0\MoneyMaker.WidgetScraper.fsproj.CopyComplete
 C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\obj\Debug\netstandard2.0\MoneyMaker.WidgetScraper.dll
 C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\obj\Debug\netstandard2.0\MoneyMaker.WidgetScraper.pdb
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\bin\Debug\netstandard2.0\MoneyMaker.Dto.dll
+C:\Users\gajo3\source\repos\MoneyMaker.Backend\MoneyMaker.WidgetScraper\bin\Debug\netstandard2.0\MoneyMaker.Dto.pdb

@@ -1,6 +1,7 @@
 ﻿module MoneyMaker.Common.ScrapingParts
 
 open Common
+open MoneyMaker.Dto
 
 let BaseWebsite = "http://www.oddsportal.com"
 let BaseSafeWebsite = "https://www.oddsportal.com"
@@ -15,7 +16,7 @@ let extractSportCountryAndLeagueFromLink gameLink =
     let parts = getLinkParts (gameLink |> remove BaseWebsite |> remove BaseSafeWebsite)
     (parts.[0], parts.[1], parts.[2])
 
-let isGameLinkFromAnyLeague (sportInfo: Sport) gameLink =
+let isGameLinkFromAnyLeague (sportInfo: SportDto) gameLink =
     if ((gameLink |> (remove BaseWebsite) |> getLinkParts |> Array.length) < 3) then false
     else
         let (sport, country, league) = extractSportCountryAndLeagueFromLink gameLink

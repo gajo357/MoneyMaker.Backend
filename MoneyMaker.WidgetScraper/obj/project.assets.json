@@ -93,13 +93,27 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "FSharp.Core": "4.7.0",
-          "FSharp.Data": "3.3.2"
+          "FSharp.Data": "3.3.2",
+          "MoneyMaker.Dto": "1.0.0"
         },
         "compile": {
           "bin/placeholder/MoneyMaker.Common.dll": {}
         },
         "runtime": {
           "bin/placeholder/MoneyMaker.Common.dll": {}
+        }
+      },
+      "MoneyMaker.Dto/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "compile": {
+          "bin/placeholder/MoneyMaker.Dto.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MoneyMaker.Dto.dll": {}
         }
       }
     }
@@ -326,6 +340,11 @@
       "type": "project",
       "path": "../MoneyMaker.Common/MoneyMaker.Common.fsproj",
       "msbuildProject": "../MoneyMaker.Common/MoneyMaker.Common.fsproj"
+    },
+    "MoneyMaker.Dto/1.0.0": {
+      "type": "project",
+      "path": "../MoneyMaker.Dto/MoneyMaker.Dto.fsproj",
+      "msbuildProject": "../MoneyMaker.Dto/MoneyMaker.Dto.fsproj"
     }
   },
   "projectFileDependencyGroups": {

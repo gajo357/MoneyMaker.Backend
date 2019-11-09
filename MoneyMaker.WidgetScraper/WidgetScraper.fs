@@ -53,7 +53,7 @@ let calculatePsychForGame games =
 let getWidgetGames myBookie meanBookies = async {
     let! meanGames = 
         meanBookies 
-        |> List.map widgetGamesAsync 
+        |> Seq.map widgetGamesAsync 
         |> Async.Parallel
 
     let bet365Games = meanGames |> Array.find (fun (_, b) -> b = myBookie) |> fst |> Seq.toArray
@@ -74,11 +74,13 @@ let getWidgetGames myBookie meanBookies = async {
         |> Seq.toArray
 }
 
-let DownloadFromWidgetAsync sports myBookie meanBookies =
+let DownloadFromWidgetAsync (sports: MoneyMaker.Dto.SportDto seq) myBookie meanBookies =
     async {
         let! games = getWidgetGames myBookie meanBookies
         return
             sports
             |> Seq.collect (fun s -> 
                 games |> Seq.filter (fun g -> isGameLinkFromAnyLeague s g.GameLink))
+            |> Seq.map Mapping.toGameDto
+            |> Seq.toArray
     } |> Async.StartAsTask

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>cf60678e-b7f7-40d1-b3eb-ac04f83c60b4</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MoneyMaker.DataProvider\MoneyMaker.DataProvider.csproj" />
+    <ProjectReference Include="..\MoneyMaker.Dto\MoneyMaker.Dto.fsproj" />
+    <ProjectReference Include="..\MoneyMaker.WidgetScraper\MoneyMaker.WidgetScraper.fsproj" />
+  </ItemGroup>
+
+</Project>

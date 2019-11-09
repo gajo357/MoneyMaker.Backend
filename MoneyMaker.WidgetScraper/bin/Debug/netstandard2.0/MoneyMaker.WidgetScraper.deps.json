@@ -87,10 +87,19 @@
       "MoneyMaker.Common/1.0.0": {
         "dependencies": {
           "FSharp.Core": "4.7.0",
-          "FSharp.Data": "3.3.2"
+          "FSharp.Data": "3.3.2",
+          "MoneyMaker.Dto": "1.0.0"
         },
         "runtime": {
           "MoneyMaker.Common.dll": {}
+        }
+      },
+      "MoneyMaker.Dto/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "runtime": {
+          "MoneyMaker.Dto.dll": {}
         }
       }
     }
@@ -130,6 +139,11 @@
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "MoneyMaker.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MoneyMaker.Dto/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

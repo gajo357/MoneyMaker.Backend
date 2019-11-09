@@ -11,6 +11,7 @@
         "dependencies": {
           "FSharp.Core": "4.7.0",
           "FSharp.Data": "3.3.2",
+          "MoneyMaker.Dto": "1.0.0",
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
@@ -82,6 +83,14 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
+      },
+      "MoneyMaker.Dto/1.0.0": {
+        "dependencies": {
+          "FSharp.Core": "4.7.0"
+        },
+        "runtime": {
+          "MoneyMaker.Dto.dll": {}
+        }
       }
     }
   },
@@ -118,6 +127,11 @@
       "sha512": "sha512-KsgnXHeKmdM9x2Pwk2eCmTA6AGyQyWltdfmI39lv7+c/a61DCQfKRTDfhwOebO+WBINyLWoAo/rmq3ZKGVHXyw==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "MoneyMaker.Dto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
