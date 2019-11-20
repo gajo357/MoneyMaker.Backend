@@ -3,6 +3,7 @@ using MoneyMaker.DataProvider.Interfaces;
 using MoneyMaker.Dto;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace MoneyMaker.Api.Canopy.Controllers
@@ -11,22 +12,20 @@ namespace MoneyMaker.Api.Canopy.Controllers
     [Route("[controller]")]
     public class GamesController : ControllerBase
     {
-        private IBookiesProvider BookiesProvider { get; }
-        private ISportsProvider SportsProvider { get; }
+        private IDataProvider DataProvider { get; }
 
-        public GamesController(IBookiesProvider bookiesProvider, ISportsProvider sportsProvider)
+        public GamesController(IDataProvider sportsProvider)
         {
-            BookiesProvider = bookiesProvider;
-            SportsProvider = sportsProvider;
+            DataProvider = sportsProvider;
         }
 
         [HttpGet]
         public async Task<IEnumerable<GameDto>> GetGames([FromQuery] DateTime? date) 
-            => await CanopyScraper.CanopyScraper.downloadGameInfos(await SportsProvider.GetSportsAsync(), date ?? DateTime.Now);
+            => await CanopyScraper.CanopyScraper.downloadGameInfos(await DataProvider.GetSportsAsync(), date ?? DateTime.Now);
         
         [HttpPost]
         public async Task<GameDto> GameFromLink([FromBody] GameLink linkDto)
-            => await CanopyScraper.CanopyScraper.readGameFromLink(linkDto.Bookie, await BookiesProvider.GetBookiesAsync(), linkDto.Link);
+            => await CanopyScraper.CanopyScraper.readGameFromLink((await DataProvider.GetBookiesAsync()).Select(s => s.Name), linkDto.Link);
     }
 
     public class GameLink

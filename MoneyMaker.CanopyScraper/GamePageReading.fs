@@ -85,34 +85,22 @@ let getOddsFromGamePage gameHtml =
         |> Seq.choose getOddsFromRow
         |> Seq.toArray
 
-let readMeanOdds meanBookies odds =
-    let odds =
-        odds 
-        |> Array.filter (fun o -> meanBookies |> Seq.contains o.Bookie)
-        |> Array.map (fun o -> convertOddsListTo1x2 o.Odds)
-    
-    (odds |> calculateMeans, odds.Length)
+let readGameRows bookies gameLink gameHtml =
+    let odds = gameHtml |> getOddsFromGamePage
+        
+    let participantsAndDateElement = getParticipantsAndDateElement gameHtml
+    let (homeTeam, awayTeam) = readParticipantsNames participantsAndDateElement
+    let gameDate = participantsAndDateElement |> (readGameDate >> getDateOrDefault)
+    let (sport, country, league) = extractSportCountryAndLeagueFromLink gameLink
 
-let readGame myBookie meanBookies gameLink gameHtml =
-    option {
-        let odds = gameHtml |> getOddsFromGamePage
-        let (meanOdds, noOdds) = odds |> readMeanOdds meanBookies
-        let odds = 
-            match odds |>  Seq.tryFind (fun o -> o.Bookie = myBookie) with
-            | Some b -> convertOddsListTo1x2 b.Odds
-            | None -> emptyOdds
-
-        let participantsAndDateElement = getParticipantsAndDateElement gameHtml
-        let (homeTeam, awayTeam) = readParticipantsNames participantsAndDateElement
-        let gameDate = participantsAndDateElement |> (readGameDate >> getDateOrDefault)
-        let (sport, country, league) = extractSportCountryAndLeagueFromLink gameLink
-
-        return {
+    odds 
+    |> Seq.filter (fun o -> not o.Deactivated)
+    |> Seq.filter (fun o -> bookies |> Seq.contains o.Bookie)
+    |> Seq.map (fun o -> 
+        {
             HomeTeam = homeTeam; AwayTeam = awayTeam
             Date = gameDate; GameLink = gameLink
             Sport = sport; Country = country; League = league
-            Odds = odds
-            MeanOdds = meanOdds
-            NoMean = noOdds
+            Odds = convertOddsListTo1x2 o.Odds; Bookie = o.Bookie
         }
-    }
+    )

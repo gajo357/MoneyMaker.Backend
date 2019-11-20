@@ -4,8 +4,10 @@ using System.Threading.Tasks;
 
 namespace MoneyMaker.DataProvider.Interfaces
 {
-    public interface ISportsProvider
+    public interface IDataProvider
     {
         Task<IEnumerable<SportDto>> GetSportsAsync();
+        Task<IEnumerable<LeagueGaussDto>> GetLeaguesAsync();
+        Task<IEnumerable<BookieWidgetDto>> GetBookiesAsync();
     }
 }

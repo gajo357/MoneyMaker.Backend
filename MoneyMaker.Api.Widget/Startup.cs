@@ -3,9 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MoneyMaker.DataProvider;
 using MoneyMaker.DataProvider.Interfaces;
-using MoneyMaker.Dto;
 using Newtonsoft.Json.Serialization;
 
 namespace MoneyMaker.Api.Widget
@@ -23,8 +21,7 @@ namespace MoneyMaker.Api.Widget
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton(Configuration);
-            services.AddSingleton<ISportsProvider, SportsProvider>();
-            services.AddSingleton<IBookiesProvider, BookiesProvider>();
+            services.AddSingleton<IDataProvider, DataProvider.DataProvider>();
 
             services.AddControllers()
                 .AddNewtonsoftJson(options =>

@@ -1,16 +1,26 @@
 ﻿namespace MoneyMaker.Dto
 
 [<CLIMutable>]
+type BookieWidgetDto = { Name: string; Widget: string }
+
+[<CLIMutable>]
+type LeagueGaussDto = { 
+    Sport: string; Country: string; League: string; 
+    WinMu: float; WinSigma: float; WinCountMu: float; 
+    LoseMu: float; LoseSigma: float; LoseCountMu: float 
+    }
+
+[<CLIMutable>]
 type LeagueDto = { Country: string; League: string }
 
 [<CLIMutable>]
-type SportDto = { Sport: string; Leagues: LeagueDto array }
+type SportDto = { Sport: string; Leagues: LeagueDto[] }
 
 [<CLIMutable>]
-type GameOddsDto = { Home: float; Draw: float; Away: float }
+type GameOddsDto = { Home: float; Draw: float; Away: float; Bookie: string }
 
 [<CLIMutable>]
-type GameDto = 
+type GameInfoDto = 
     { 
         HomeTeam: string; AwayTeam: string; 
         Date: System.DateTime; 
@@ -18,7 +28,22 @@ type GameDto =
         Sport: string; 
         Country: string; 
         League: string 
-        MeanOdds: GameOddsDto
-        Odds: GameOddsDto
-        NoMean: int
+    }
+
+[<CLIMutable>]
+type GameDto = 
+    { 
+        Info: GameInfoDto
+
+        Odds: GameOddsDto[]
+    }
+
+[<CLIMutable>]
+type GameWithBetDto = 
+    { 
+        Info: GameInfoDto
+
+        MyOdds: GameOddsDto
+        BookieOdds: GameOddsDto
+        Kellies: GameOddsDto
     }

@@ -15,7 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MoneyMaker.DataProvider\MoneyMaker.DataProvider.csproj" />
     <ProjectReference Include="..\MoneyMaker.Dto\MoneyMaker.Dto.fsproj" />
-    <ProjectReference Include="..\MoneyMaker.WidgetScraper\MoneyMaker.WidgetScraper.fsproj" />
+    <ProjectReference Include="..\MoneyMaker.Workflows\MoneyMaker.Workflows.fsproj" />
   </ItemGroup>
 
 </Project>

@@ -2,9 +2,9 @@
 
 type League = { Country: string; League: string }
 type Sport = { Sport: string; Leagues: League list }
-type GameOdds = { Home: float; Draw: float; Away: float }
+type GameOdds = { Home: float; Draw: float; Away: float; }
 
-type Game = 
+type GameRow = 
     { 
         HomeTeam: string; AwayTeam: string; 
         Date: System.DateTime; 
@@ -12,7 +12,6 @@ type Game =
         Sport: string; 
         Country: string; 
         League: string 
-        MeanOdds: GameOdds
         Odds: GameOdds
-        NoMean: int
+        Bookie: string
     }

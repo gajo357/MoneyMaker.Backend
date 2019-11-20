@@ -19,16 +19,11 @@ let downloadGameInfos (sports: SportDto seq) date =
             |> Seq.map Mapping.toGameDto
     } |> Async.StartAsTask
 
-let readGameFromLink myBookie meanBookies gameLink =
+let readGameFromLink bookies gameLink =
     async {
         let! html = navigateAndGetHtml gameLink
-        let game =  readGame myBookie meanBookies gameLink html
-        let game = 
-            match game with 
-            | Some g -> g
-            | None -> OddsManipulation.emptyGame
-
-        return game |> Mapping.toGameDto
+        let gameRows =  readGameRows bookies gameLink html
+        return gameRows |> Mapping.toGameDtoFromRows
     } |> Async.StartAsTask
 
 let logIn username password = 

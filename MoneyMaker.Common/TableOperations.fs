@@ -29,12 +29,12 @@ let getGameInfoFromRow row =
         let (sport, country, league) = extractSportCountryAndLeagueFromLink link
         let odds = rowOdds tds
 
-        return { emptyGame with
+        return { 
                     Date = time; 
                     HomeTeam = homeTeam; AwayTeam = awayTeam;
                     GameLink =  prependBaseWebsite link;
                     Sport = sport; Country = country; League = league;
-                    Odds = odds
+                    Odds = odds; Bookie = ""
                }
     }
 

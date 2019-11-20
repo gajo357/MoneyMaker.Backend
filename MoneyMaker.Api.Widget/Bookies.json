@@ -1,6 +1,18 @@
 [
-  "bet365",
-  "bwin",
-  "pinnacle",
-  "williamHill"
+  {
+    "Name": "bet365",
+    "Widget": "e2eb0fe27b471bb"
+  },
+  {
+    "Name": "bwin",
+    "Widget": "5f5c1365462bfec"
+  },
+  {
+    "Name": "pinnacle",
+    "Widget": "098c02809003dcd"
+  },
+  {
+    "Name": "williamHill",
+    "Widget": "db03999b5cfdac1"
+  }
 ]
